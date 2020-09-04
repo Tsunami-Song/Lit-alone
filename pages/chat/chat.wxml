@@ -1,0 +1,31 @@
+<view class="wrap">
+  <scroll-view scroll-y scroll-into-view='{{toView}}' style='height: {{scrollHeight}};'>
+    <block wx:key wx:for='{{msgList}}' wx:for-index="index"></block>
+  <view class="containerBox" style="">
+   
+    <image class='background' src="../../img/back.jpg" mode="aspectFill"></image>
+    <view wx:key="index" wx:for="{{allContentList}}" id='msg-{{index}}'>
+      <view wx:key="index" wx:if="{{index%2 == 1}}" class="textBox fl" style="">{{item.value}}</view>
+      <view wx:key="index" wx:if="{{index%2 == 0}}" class="textBox fr">{{item.value}}</view>
+  
+    </view>
+  
+    <!--<view class="leftBox" wx:for="{{inputValueList}}">
+    =======
+            <view wx:key="{{index}}" class="textItem">{{item.value}}</view>
+        </view>
+        <view class="rightBox" wx:for="{{returnValueList}}">
+            <view wx:key="{{index}}" class="textItem">{{item.value}}</view>
+        </view>-->
+
+    <!--<view class="section__title">你输入的是：{{inputValue}}</view>
+        <input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>-->
+  </view>
+</scroll-view>
+  <view class="handleBox">
+    <form bindreset="cleanInput">
+    <input class="input_submit" placeholder="  Hello~ 和我说说话吧 " value="{{inputTemp}}" bindinput="bindKeyInput" />
+    <button formType="reset" type="submit" class="btn_submit" size="mini" bindtap="submitTo" bindfocus='focus' bindblur='blur'>发送</button>
+  </form>
+  </view>
+</view>

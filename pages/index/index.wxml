@@ -1,0 +1,14 @@
+<!--index.wxml-->
+
+<!--页面根标签-->
+
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+
+    <image class='background' src="../../img/back.jpg" mode="aspectFill"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+      <text class="loginBtn" bindtap="loginCenterIndex">陪我聊聊天>>></text>
+  </view>
+</view>
