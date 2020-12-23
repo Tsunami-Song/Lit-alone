@@ -1,4 +1,9 @@
+
 <view class="wrap">
+  <!-- 显示公众号组件 -->
+  <view>
+ <official-account></official-account>
+</view>
   <scroll-view scroll-y scroll-into-view='{{toView}}' style='height: {{scrollHeight}};'>
     <block wx:key wx:for='{{msgList}}' wx:for-index="index"></block>
   <view class="containerBox" style="">

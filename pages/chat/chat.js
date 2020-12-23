@@ -22,7 +22,7 @@ Page({
   data: {
     text:"",
     inputValue: '',
-    returnValue: '',
+    returnValue: ' ',
     allContentList: [],
     searchinput:'',
     sendInfo: '', 
@@ -30,7 +30,7 @@ Page({
     //key:'',
     key1: "d156535449c341bbbbbafce8138ad4c1", //图灵机器人秘钥1
     key2: "fea14518878948f1b6cb26537f05baa5", //图灵机器人秘钥2
-    key: "d13b441029804ee99fc4e3b617a5f557", //图灵机器人秘钥3
+    key: "d8746444d3174cc99203d1a7f81597c7", //图灵机器人秘钥3
     key4: "1b73bb19d2d249a5932e833547f2c742", //图灵机器人秘钥4
     num:0
   },
